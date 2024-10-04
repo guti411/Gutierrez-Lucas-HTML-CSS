@@ -1,0 +1,103 @@
+/*
+Tarea de posicionamiento con CSS. Todo el trabajo debe hacerse en este archivo
+"." es para las clases y el "#" es para los id
+*/
+
+/* Ejercicio 1: Centrar el texto en un span */
+#ejercicioUno{
+    display: block;
+    text-align: center;
+}
+
+/* Ejercicio 2: Posicionar el header */
+#ejercicioDos{
+    border: none;
+    position: relative; /* Necesario para que el z-index funcione */
+    margin-top: 200px; /* Ajusta el margen superior si es necesario para que no se solape */
+}
+/* Header general */
+#header {
+    margin-top: 20px; /* Ajusta el margen si es necesario */
+}
+
+/* Ejercicio 3: */
+
+#ejercicioTres {
+    position: absolute;
+    top: 100px;   /* Coincide con la parte superior de la caja roja */
+    left: 200px;  /* Coincide con la parte izquierda de la caja roja */
+    width: 400px; /* Ajusta el tamaño de la imagen para que se ajuste a la caja */
+    height: auto; /* Mantiene la proporción de la imagen */  
+}
+
+
+/* Ejercicio 4: */
+
+#ejercicioCuatro{
+    position: fixed;   /* posiciona el elemento en relación con la ventana del navegador */  
+    top: 0px;   
+    left: 0px;  
+    display: flex; /* Usa flexbox para alinear el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 10px; /* Añade espacio alrededor del contenido */
+}
+
+/* Ejercicio 5: */
+#ejercicioCinco {
+    display: flex; /* Usa flexbox para alinear los elementos */
+    flex-direction: row; /* Organiza los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente en el contenedor */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho de #ejercicioCuatro */
+    padding: 0 20px; /* Añade un poco de espacio a los lados para evitar que los elementos lleguen a los bordes */
+}
+
+#ejercicioCinco span {
+    margin: 0 10px; /* Espacio horizontal entre los elementos */
+    flex-shrink: 0; /* Evita que el texto se reduzca demasiado */
+}
+
+/* Ejercicio 7. */
+
+/* Ejercicio 7: */
+#ejercicioSiete {
+    display: flex; /* Habilita flexbox en el contenedor */
+    flex-direction: row; /* Organiza los elementos en una fila (column para vertical) */
+    justify-content: space-around; /* Distribuye el espacio entre los elementos (cambia a space-between, space-evenly, etc.) */
+    align-items: center; /* Alinea verticalmente los elementos en el centro (puedes cambiar a flex-start, flex-end, baseline, etc.) */
+    height: 300px;
+    border: 2px solid #ccc; 
+    padding: 10px; /* Añade espacio alrededor del contenido */
+    background-color: #f0f0f0; /* Cambia el color de fondo para ver el contenedor */
+}
+
+.elementos {
+    flex: 1; /* Permite que los elementos crezcan para ocupar el espacio disponible (puedes ajustar el valor) */
+    display: flex; /* Habilita flexbox en los elementos internos */
+    justify-content: center; /* Centra el texto horizontalmente dentro del elemento */
+    align-items: center; /* Centra el texto verticalmente dentro del elemento */
+    border: 1px solid #000; /* Añade un borde a los elementos para ver claramente los contornos */
+    background-color: #d9d9d9; /* Cambia el color de fondo de los elementos */
+    margin: 5px; /* Espacio entre los elementos */
+    height: 80px; /* Ajusta la altura de los elementos internos */
+}
+
+.textoElemento {
+    font-size: 14px; /* Tamaño del texto */
+}
+
+#elementoUno{
+    align-self: center;
+}
+
+#elementoDos{
+    flex-direction: column;
+    justify-content: center;
+}
+#elementoTres{
+    justify-content: flex-start;
+    align-items: stretch;
+}
+#elementoCuatro{
+    align-self: center;
+}

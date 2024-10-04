@@ -1,0 +1,68 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   /* Asegura que el tamaño del elemento incluye el padding  */
+    font-family: Arial, sans-serif;  /* y los bordes en las dimensiones totales */
+}
+
+body {
+    scroll-behavior: smooth; /* Hace que el desplazamiento entre paginas sea más suave */
+    padding-top: 60px;  /* Espacio para la barra de navegación */
+}
+
+/* Barra de navegación fija */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #aa5c5c;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar ul li {      /*Para que aparezca linealmente  */
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    
+    color: rgb(202, 175, 20);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones */
+.section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.section:nth-child(odd) {   /* Selecciona las secciones impares y las discrimina y*/
+    background-color: #ccc; /* les pone color a las secciones pares. Si queremos que sea al revez usamos el "even" */
+}
+
+/* Pie de página */
+.footer {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+}

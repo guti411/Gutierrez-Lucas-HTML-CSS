@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black; /* Fondo negro para la página */
+}
+
+.slider-container {
+    width: 100%; /* Ancho del contenedor al 100% del contenedor padre */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.slider-container .slider-viewport {
+    width: 70%; /* Ancho del viewport ajustado al 70% del contenedor */
+    margin: 0 auto; /* Centra el viewport horizontalmente */
+    border-radius: 10px; /* Bordes redondeados del viewport */
+    display: flex; /* Usa flexbox para los elementos hijos */
+    overflow-x: scroll; /* Permite el desplazamiento horizontal */
+    scroll-snap-type: x mandatory; /* Habilita el ajuste del desplazamiento en el eje X */
+    scroll-behavior: smooth; /* Desplazamiento suave */
+    -webkit-overflow-scrolling: touch; /* Habilita el desplazamiento suave en iOS */
+}
+
+.slider-container .slide {
+    min-width: 100%; /* Ancho mínimo de cada diapositiva igual al ancho del viewport */
+    height: 400px; /* Altura fija para las diapositivas */
+    scroll-snap-align: start; /* Alinea el inicio de la diapositiva con el viewport */
+    border-radius: 10px; /* Bordes redondeados de cada diapositiva */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total del elemento */
+    display: flex; /* Usa flexbox para alinear contenido dentro de la diapositiva */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    font-size: 24px; /* Tamaño de fuente de las diapositivas */
+    color: rgb(0, 0, 0); /* Color de texto blanco */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.slider-container .slide:nth-child(1) {
+    background-color: #fa8072; /* Color de fondo de la primera diapositiva */
+}
+
+.slider-container .slide:nth-child(2) {
+    background-color: #4688b4; /* Color de fondo de la segunda diapositiva */
+}
+
+.slider-container .slide:nth-child(3) {
+    background-color: #9acd32; /* Color de fondo de la tercera diapositiva */
+}
+
+.slider-container .slide:nth-child(4) {
+    background-color: #4e1fa0; /* Color de fondo de la cuarta diapositiva */
+}
+
+.slider-container .links {
+    padding: 10px; /* Espaciado interno del contenedor de enlaces */
+    display: flex; /* Usa flexbox para alinear los enlaces */
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    gap: 10px; /* Espacio entre los enlaces */
+}
+
+.slider-container .links a {
+    width: 60px; /* Ancho de los enlaces */
+    height: 60px; /* Altura de los enlaces */
+    background-color: #2b2a2a; /* Color de fondo de los enlaces */
+    border-radius: 20%; /* Bordes redondeados */
+    display: flex; /* Usa flexbox para alinear el contenido del enlace */
+    align-items: center; /* Centra verticalmente el contenido del enlace */
+    justify-content: center; /* Centra horizontalmente el contenido del enlace */
+    color: rgb(255, 255, 255); /* Color del texto dentro del enlace */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 18px; /* Tamaño de fuente de los enlaces */
+}
+
+.slider-container .links a:hover {
+    background-color: #bbb; /* Color de fondo de los enlaces al pasar el cursor sobre ellos */
+}
